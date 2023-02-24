@@ -1,0 +1,28 @@
+###
+GET http://localhost:8087/books
+###
+GET http://localhost:8087/books/36cae87c-a2f9-464e-9fce-c53fe88201c7
+###
+POST http://localhost:8087/books
+Content-Type: application/json
+
+{
+    "isbn" : "978-0-7334-2609-4",
+    "penulis" : "Rini Kurniasih",
+    "deskripsi" : "Cerita tentang Seorang Anak yang Durhaka Kepada Ibunya",
+    "kategori" : "Cerita Fiksi",
+    "judul": "Malin Kundang"
+}
+###
+PUT http://localhost:8087/books/36cae87c-a2f9-464e-9fce-c53fe88201c7
+Content-Type: application/json
+
+{
+    "isbn" : "978-0-7334-2609-4",
+    "penulis" : "Rini Kurniasih",
+    "deskripsi" : "Cerita tentang Seorang Anak yang Durhaka Kepada Ibunya",
+    "kategori" : "Cerita Fiksi",
+    "judul": "Malin Kundang"
+}
+###
+DELETE http://localhost:8087/books/36cae87c-a2f9-464e-9fce-c53fe88201c7
